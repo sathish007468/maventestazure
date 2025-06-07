@@ -22,7 +22,7 @@ steps:
     goals: 'package'
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: '<your-service-connection-name>'  # Example: azure-conn-devops
+    azureSubscription: '<connection>'  # Example: azure-conn-devops
     appType: 'webApp'
-    appName: '<your-app-service-name>'                  # Example: mavenwebapp123
+    appName: '<javateam>'                  # Example: mavenwebapp123
     package: '$(System.DefaultWorkingDirectory)/**/*.jar'
