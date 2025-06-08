@@ -20,9 +20,3 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: AzureWebApp@1
-  inputs:
-    azureSubscription: '<connection>'  # Example: azure-conn-devops
-    appType: 'webApp'
-    appName: '<javateam>'                  # Example: mavenwebapp123
-    package: '$(System.DefaultWorkingDirectory)/**/*.jar'
